@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0.0",
+  "areaId": "synthetic-marshline-commons",
+  "releaseId": "synthetic-marshline-commons-r2",
+  "contentFingerprint": "fnv1a32:0dbad542",
+  "title": "Marshline Commons",
+  "subtitle": "A fictional waterside campus block",
+  "status": "active",
+  "nonAuthoritative": true,
+  "theme": {
+    "id": "pause-conditions",
+    "title": "Where would I pause?",
+    "description": "Notice which directly perceivable conditions affect your own decision to stay or move on."
+  },
+  "validity": {
+    "verifiedAt": "2026-08-30T09:00:00+08:00",
+    "reviewDueAt": "2028-08-30T09:00:00+08:00",
+    "expiresAt": "2030-08-30T23:59:59+08:00",
+    "validConditions": [
+      "Synthetic demonstration only",
+      "No safety, opening-hours, or accessibility assurance",
+      "Not a navigation route"
+    ]
+  },
+  "rights": {
+    "fixtureLicense": "CC0-1.0",
+    "mapGeometry": "Project-authored synthetic geometry",
+    "copy": "Project-authored synthetic copy",
+    "distribution": "CC0-1.0 public repository redistribution permitted"
+  },
+  "sources": [
+    {
+      "id": "source-synthetic-geometry",
+      "label": "Synthetic map geometry",
+      "publisher": "One Square Kilometre prototype",
+      "kind": "project-authored-synthetic",
+      "rights": "CC0-1.0",
+      "checkedAt": "2026-08-30T09:00:00+08:00",
+      "nonAuthoritative": true
+    },
+    {
+      "id": "source-synthetic-metadata",
+      "label": "Synthetic anchor metadata",
+      "publisher": "One Square Kilometre prototype",
+      "kind": "project-authored-synthetic",
+      "rights": "CC0-1.0",
+      "checkedAt": "2026-08-30T09:00:00+08:00",
+      "nonAuthoritative": true
+    }
+  ],
+  "route": {
+    "label": "Suggested observation sequence",
+    "notNavigation": true,
+    "anchorIds": [
+      "lantern-steps",
+      "rainline-court",
+      "quiet-cut",
+      "canal-screen"
+    ]
+  },
+  "anchors": [
+    {
+      "id": "lantern-steps",
+      "shortCode": "A",
+      "name": "Lantern Steps",
+      "mapPosition": { "x": 19, "y": 28 },
+      "state": "current",
+      "confidence": "fixture",
+      "verifiedAt": "2026-08-30T09:10:00+08:00",
+      "expiresAt": "2030-08-30T23:59:59+08:00",
+      "accessibility": "synthetic-not-assessed",
+      "metadata": [
+        "Broad stepped edge beside a planted slope",
+        "Mixed sun and shade in this fixture",
+        "No real-world access status"
+      ],
+      "prompt": {
+        "id": "prompt-lantern-steps-r1",
+        "question": "Which edge would you choose for a ten-minute pause, and what makes that edge different?",
+        "cue": "Compare the upper step, lower step, and path edge without judging other people.",
+        "unsupportedInference": "Do not infer safety, ownership, or why another person is present."
+      },
+      "sourceRefs": ["source-synthetic-geometry", "source-synthetic-metadata"]
+    },
+    {
+      "id": "rainline-court",
+      "shortCode": "B",
+      "name": "Rainline Court",
+      "mapPosition": { "x": 48, "y": 35 },
+      "state": "current",
+      "confidence": "fixture",
+      "verifiedAt": "2026-08-30T09:25:00+08:00",
+      "expiresAt": "2030-08-30T23:59:59+08:00",
+      "accessibility": "synthetic-not-assessed",
+      "metadata": [
+        "Covered court in the synthetic plan",
+        "Two path entrances",
+        "No real weather or opening data"
+      ],
+      "prompt": {
+        "id": "prompt-rainline-court-r1",
+        "question": "If the weather changed, which part of this court would still feel usable to you?",
+        "cue": "Use only what the fixture shows and what you personally notice.",
+        "unsupportedInference": "The prototype cannot judge real shelter, weather, or safety."
+      },
+      "sourceRefs": ["source-synthetic-geometry", "source-synthetic-metadata"]
+    },
+    {
+      "id": "quiet-cut",
+      "shortCode": "C",
+      "name": "Quiet Cut",
+      "mapPosition": { "x": 67, "y": 61 },
+      "state": "low-confidence",
+      "confidence": "low",
+      "verifiedAt": "2026-08-30T09:40:00+08:00",
+      "expiresAt": "2030-08-30T23:59:59+08:00",
+      "accessibility": "synthetic-not-assessed",
+      "metadata": [
+        "Narrow planted passage in the fixture",
+        "Sound conditions intentionally unspecified",
+        "Metadata confidence is deliberately low"
+      ],
+      "prompt": {
+        "id": "prompt-quiet-cut-r1",
+        "question": "What would you need to check before deciding whether this narrow passage suits a pause?",
+        "cue": "Record uncertainty instead of filling the gap with a guess.",
+        "unsupportedInference": "No conclusion about noise, access, comfort, or safety is available."
+      },
+      "sourceRefs": ["source-synthetic-geometry", "source-synthetic-metadata"]
+    },
+    {
+      "id": "canal-screen",
+      "shortCode": "D",
+      "name": "Canal Screen",
+      "mapPosition": { "x": 24, "y": 67 },
+      "state": "current",
+      "confidence": "fixture",
+      "verifiedAt": "2026-08-30T09:50:00+08:00",
+      "expiresAt": "2030-08-30T23:59:59+08:00",
+      "accessibility": "synthetic-not-assessed",
+      "metadata": [
+        "Perforated screen beside a fictional water edge",
+        "A narrow standing ledge in the synthetic plan",
+        "No real-world access or water-edge status"
+      ],
+      "prompt": {
+        "id": "prompt-canal-screen-r1",
+        "question": "Which visible detail would make you pause here or keep moving?",
+        "cue": "Describe your own decision without turning the fixture into a place recommendation.",
+        "unsupportedInference": "No conclusion about comfort, water safety, or access is available."
+      },
+      "sourceRefs": ["source-synthetic-geometry", "source-synthetic-metadata"]
+    },
+    {
+      "id": "north-shelter",
+      "shortCode": "E",
+      "name": "North Shelter",
+      "mapPosition": { "x": 82, "y": 31 },
+      "state": "stale",
+      "confidence": "expired",
+      "verifiedAt": "2026-07-12T11:00:00+08:00",
+      "expiresAt": "2026-08-20T23:59:59+08:00",
+      "accessibility": "synthetic-not-assessed",
+      "metadata": [
+        "Fixture metadata intentionally expired",
+        "New check-in is disabled",
+        "Existing notes remain exportable and deletable"
+      ],
+      "prompt": {
+        "id": "prompt-north-shelter-r1",
+        "question": "This anchor is stale. What evidence would you require before using it?",
+        "cue": "Do not continue the field task here. Review the expiry state instead.",
+        "unsupportedInference": "No current claim is available from expired metadata."
+      },
+      "sourceRefs": ["source-synthetic-geometry", "source-synthetic-metadata"]
+    },
+    {
+      "id": "reed-bridge",
+      "shortCode": "F",
+      "name": "Reed Bridge",
+      "mapPosition": { "x": 37, "y": 76 },
+      "state": "unsupported",
+      "confidence": "unsupported",
+      "verifiedAt": "2026-08-30T10:00:00+08:00",
+      "expiresAt": "2030-08-30T23:59:59+08:00",
+      "accessibility": "unsupported-in-this-fixture",
+      "metadata": [
+        "Fixture route is intentionally unsupported here",
+        "The prototype will not ask the user to proceed",
+        "No alternative route is asserted"
+      ],
+      "prompt": {
+        "id": "prompt-reed-bridge-r1",
+        "question": "What should a responsible protocol do when a place is not supported for this session?",
+        "cue": "Stop, retain the limitation, and do not turn it into a route recommendation.",
+        "unsupportedInference": "The prototype does not infer an accessible or safe alternative."
+      },
+      "sourceRefs": ["source-synthetic-geometry", "source-synthetic-metadata"]
+    }
+  ]
+}

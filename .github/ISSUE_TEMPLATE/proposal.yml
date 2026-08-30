@@ -1,0 +1,45 @@
+name: Proposal
+description: Propose a scoped product, research, documentation, or engineering change
+title: "proposal: "
+labels: [proposal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals do not authorise product scope. Preserve synthetic, not-navigation, local-only, and Validate-first boundaries.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or decision
+      description: State the problem before the preferred solution.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and gaps
+      description: Separate facts, inference, missing evidence, and fixtures.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope and non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks, rights, and failure cases
+      description: Include privacy, accessibility, licence, expiry, correction, and rollback impact.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundary confirmation
+      options:
+        - label: The proposal adds no real/private data, real location fixture, or unauthorised third-party asset.
+          required: true
+        - label: I understand that acceptance of this issue is not build, field, or production approval.
+          required: true

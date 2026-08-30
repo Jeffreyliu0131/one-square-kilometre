@@ -1,0 +1,56 @@
+name: Bug report
+description: Report a reproducible defect in the local synthetic prototype
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use synthetic data only. Do not include secrets, private information, real locations, NUS-owned material, or security exploit details. Use private vulnerability reporting for security issues.
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or version
+      description: Commit SHA or branch used for the reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest deterministic synthetic reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Node, and pnpm versions.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitised evidence
+      description: Logs or screenshots with all private and real-world information removed.
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundary confirmation
+      options:
+        - label: I used only synthetic data and removed secrets/private information.
+          required: true
+        - label: This is not a public security disclosure or real-world route/safety report.
+          required: true

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "fixtureSet": "synthetic-marshline-commons-r2",
+  "createdAt": "2026-08-30T09:00:00+08:00",
+  "authoring": "Project-authored synthetic data",
+  "nonAuthoritative": true,
+  "containsRealLocations": false,
+  "containsPersonalData": false,
+  "containsThirdPartyMedia": false,
+  "assets": [
+    {
+      "path": "src/fixtures/area-manifest.json",
+      "kind": "synthetic-data",
+      "rights": "CC0-1.0",
+      "source": "Project-authored"
+    },
+    {
+      "path": "src/components/FieldMap.tsx",
+      "kind": "synthetic-map-rendering",
+      "rights": "Project source code",
+      "source": "Project-authored geometry and styling"
+    }
+  ],
+  "dependencyNotices": [
+    { "name": "react", "version": "^19.2.8", "license": "MIT" },
+    { "name": "react-dom", "version": "^19.2.8", "license": "MIT" },
+    { "name": "react-aria-components", "version": "^1.20.0", "license": "Apache-2.0" },
+    { "name": "@phosphor-icons/react", "version": "^2.1.10", "license": "MIT" },
+    { "name": "zod", "version": "^4.5.2", "license": "MIT" }
+  ],
+  "notices": [
+    "No NUS maps, text, logos, photographs, or place data are included.",
+    "No OpenStreetMap, Google Maps, or commercial tile data are included.",
+    "The fixture does not assert safety, access, opening hours, or real-world location facts."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "One Square Kilometre Synthetic Prototype",
+  "short_name": "1 km²",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f5f2",
+  "theme_color": "#1d684e",
+  "description": "A local, synthetic field-protocol prototype. Not navigation."
+}
